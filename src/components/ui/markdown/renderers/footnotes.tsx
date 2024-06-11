@@ -43,7 +43,7 @@ export const MFootNote: FC<PropsWithChildren> = (props) => {
             </div>
           )
         } else {
-          return null // 或者其他处理方式
+          return null // 或者其他處理方式
         }
       })}
     </div>

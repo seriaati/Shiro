@@ -47,15 +47,15 @@ const Image = () => {
       .then((response) => response.json())
       .then((data) => {
         if (data.url) {
-          toast.success('上传成功')
+          toast.success('上傳成功')
           setAttrs({ src: data.url })
         } else {
-          toast.error('上传失败')
+          toast.error('上傳失敗')
         }
       })
       .catch((error: any) => {
         console.error(error)
-        toast.error(`上传失败${error?.message}`)
+        toast.error(`上傳失敗${error?.message}`)
       })
   }
 
@@ -73,7 +73,7 @@ const Image = () => {
           <StyledButton
             onClick={() => {
               modal.present({
-                title: '编辑图片',
+                title: '編輯圖片',
                 content: () => (
                   <ImageEdit
                     onSubmit={(state) => {
@@ -105,7 +105,7 @@ const Image = () => {
               </MotionButtonBase>
             }
           >
-            此图片是一个内嵌图片，还没有上传到服务器，点击上传到服务器（需要配置
+            此圖片是一個內嵌圖片，還沒有上傳到服務器，點擊上傳到服務器（需要配置
             S3）
           </FloatPopover>
         )}
@@ -141,27 +141,27 @@ const ImageEdit: FC<ImageEditProps> = ({ onSubmit, src, alt, title }) => {
       rules: [
         {
           validator: (value: string) => value.startsWith('http'),
-          message: '请输入正确的图片链接 https://',
+          message: '請輸入正確的圖片鏈接 https://',
         },
       ],
     },
     {
       name: 'alt',
-      placeholder: '图片信息',
+      placeholder: '圖片信息',
       rules: [
         {
           validator: (value: string) => value.length <= 200,
-          message: '图片信息不能超过200个字符',
+          message: '圖片信息不能超过200個字符',
         },
       ],
     },
     {
       name: 'title',
-      placeholder: '图片标题',
+      placeholder: '圖片標題',
       rules: [
         {
           validator: (value: string) => value.length <= 50,
-          message: '图片标题不能超过50个字符',
+          message: '圖片標題不能超过50個字符',
         },
       ],
     },

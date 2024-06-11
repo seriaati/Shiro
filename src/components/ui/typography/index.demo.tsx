@@ -12,10 +12,10 @@ export const EllipsisTextWithTooltipDemo: DocumentComponent = () => {
 
 EllipsisTextWithTooltipDemo.meta = {
   title: '文本溢出省略 + 提示',
-  description: '如果文本溢出则省略，省略时伴随 Tooltip 提示',
+  description: '如果文本溢出則省略，省略時伴隨 Tooltip 提示',
 }
 
 export const metadata: DocumentPageMeta = {
   title: '文本溢出',
-  description: '一个简单的处理文本溢出省略的组件',
+  description: '一個簡單的處理文本溢出省略的組件',
 }

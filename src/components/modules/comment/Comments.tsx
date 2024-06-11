@@ -23,7 +23,7 @@ const useNewCommentObserver = (refId: string) => {
   useEffect(() => {
     const currentTitle = document.title
 
-    // 当标签页回复前台状态时，将标题重置
+    // 當標籤頁回復前台狀態時，將標題重置
     const onVisibilityChange = () => {
       if (document.visibilityState === 'visible') {
         document.title = currentTitle
@@ -33,10 +33,10 @@ const useNewCommentObserver = (refId: string) => {
 
     const cleaner = WsEvent.on(BusinessEvents.COMMENT_CREATE, (data: any) => {
       if (data.ref === refId) {
-        // 如果标签页在后台
+        // 如果標籤頁在後台
 
         if (document.visibilityState === 'hidden') {
-          document.title = `新评论！${currentTitle}`
+          document.title = `新評論！${currentTitle}`
         }
       }
     })
@@ -78,7 +78,7 @@ export const Comments: FC<CommentBaseProps> = ({ refId }) => {
   if (!data || !data.pages.length || !data.pages[0].data.length)
     return (
       <div className="flex min-h-[400px] center">
-        <NotSupport text="这里还没有评论呢" />
+        <NotSupport text="這裡還沒有評論呢" />
       </div>
     )
   return (
