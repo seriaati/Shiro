@@ -298,7 +298,7 @@ const fetchGitHubRepoData: FetchObject = {
 
 const fetchGitHubCommitData: FetchObject = {
   isValid: (id) => {
-    // 假设 'gh-commit' 类型的 id 应该是 'username/repo/commit/commitId' 的形式
+    // 假設 'gh-commit' 類型的 id 應該是 'username/repo/commit/commitId' 的形式
     const parts = id.split('/')
     return (
       parts.length === 4 &&

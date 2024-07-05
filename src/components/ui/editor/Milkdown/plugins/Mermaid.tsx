@@ -44,7 +44,7 @@ const MermaidRender = () => {
           />
           <div className="mt-4 flex justify-end space-x-2">
             <StyledButton variant="secondary" onClick={deleteNode}>
-              删除
+              刪除
             </StyledButton>
             <StyledButton
               onClick={() => {

@@ -33,7 +33,7 @@ const Tweet = dynamic(() => import('~/components/modules/shared/Tweet'), {
 })
 
 /**
- * 单行链接的渲染
+ * 單行鏈接的渲染
  */
 export const BlockLinkRenderer = ({
   href,

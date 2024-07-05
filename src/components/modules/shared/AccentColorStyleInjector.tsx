@@ -8,7 +8,7 @@ const hexToOklchString = (hex: string) => {
   return new Color(hex).oklch
 }
 const accentColorLight = [
-  // 浅葱
+  // 淺蔥
   '#33A6B8',
 
   '#FF6666',
@@ -214,19 +214,19 @@ export async function AccentColorStyleInjector({
 //     }, timeout)
 //   }, 100)
 
-//   // 重置计时器的函数
+//   // 重置計時器的函數
 //   const resetTimer = () => {
 //     window.clearTimeout(timeoutId)
 //     debounceReset()
 //   }
 
-//   // 监听浏览器的活动事件
+//   // 監聽瀏覽器的活動事件
 //   window.addEventListener('mousemove', resetTimer)
 //   window.addEventListener('keypress', resetTimer)
 //   window.addEventListener('touchstart', resetTimer)
 //   window.addEventListener('scroll', resetTimer)
 
-//   // 启动计时器
+//   // 啟動計時器
 //   resetTimer()
 
 //   // 提供取消功能
