@@ -42,7 +42,7 @@ export const scrollTextareaToCursor = (
   if ($ta) {
     const div = document.createElement('div')
     const styles = getComputedStyle($ta)
-    // 复制 textarea 的样式到 div
+    // 複製 textarea 的樣式到 div
     textareaStyles.forEach((style) => {
       div.style[style] = styles[style]
     })
@@ -50,7 +50,7 @@ export const scrollTextareaToCursor = (
     div.style.top = '-9999px'
     div.style.left = '-9999px'
 
-    // 将文本插入到 div 中，并在光标位置添加一个 span
+    // 將文本插入到 div 中，並在光標位置添加一個 span
     const start = $ta.selectionStart
     const end = $ta.selectionEnd
     const textBeforeCursor = $ta.value.substring(0, start)
@@ -65,14 +65,14 @@ export const scrollTextareaToCursor = (
     div.append(textAfterNode)
     document.body.append(div)
 
-    // 获取光标元素的位置
+    // 獲取光標元素的位置
     const cursorSpan = document.getElementById('cursor')
     const cursorY = cursorSpan!.offsetTop
     const lineHeight = Number.parseInt(styles.lineHeight)
-    // 移除临时 div
+    // 移除臨時 div
     document.body.removeChild(div)
 
-    // 计算滚动位置
+    // 計算滾動位置
     const scrollTop = cursorY - $ta.clientHeight / 2 + lineHeight / 2
     $ta.scrollTop = Math.max(0, scrollTop)
   }

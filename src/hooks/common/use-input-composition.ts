@@ -36,7 +36,7 @@ export const useInputComposition = (
 
   const handleKeyDown: React.KeyboardEventHandler<any> = useCallback(
     (e) => {
-      // 中文正在输入时，不响应 keydown 事件
+      // 中文正在輸入時，不響應 keydown 事件
       if (isCompositionRef.current) {
         e.stopPropagation()
         return

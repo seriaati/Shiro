@@ -15,10 +15,10 @@ export const createPngNoiseBackground = (hex: string) => {
   const png = new PNG({
     width,
     height,
-    filterType: -1, // 禁用过滤器
+    filterType: -1, // 禁用過濾器
   })
 
-  // 生成随机噪点
+  // 生成隨機噪點
   for (let y = 0; y < height; y++) {
     for (let x = 0; x < width; x++) {
       const idx = (width * y + x) << 2

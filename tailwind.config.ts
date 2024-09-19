@@ -236,7 +236,7 @@ const twConfig: Config = {
       {
         light: {
           'color-scheme': 'light',
-          // 浅葱
+          // 淺蔥
           primary: '#33A6B8',
 
           secondary: '#A8D8B9',

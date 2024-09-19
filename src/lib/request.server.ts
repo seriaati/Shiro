@@ -76,7 +76,7 @@ export const definePrerenderPage =
           props.children,
         )
       } catch (error: any) {
-        // 如果在内部已经处理了 NEXT_NOT_FOUND，就不再处理
+        // 如果在內部已經處理了 NEXT_NOT_FOUND，就不再處理
 
         if (error?.message === 'NEXT_NOT_FOUND') {
           notFound()

@@ -19,7 +19,7 @@ export const enum EventTypes {
   NOTE_UPDATE = 'NOTE_UPDATE',
   NOTE_DELETE = 'NOTE_DELETE',
 
-  // NOTE 历史遗留
+  // NOTE 歷史遺留
   PAGE_UPDATED = 'PAGE_UPDATED',
   PAGE_UPDATE = 'PAGE_UPDATE',
 

@@ -10,7 +10,7 @@ import { useModalStack } from '~/components/ui/modal/stacked/provider'
 export const useSaveConfirm = (
   enable: boolean,
   comparedFn: () => boolean,
-  message = '文章未保存是否确定离开？',
+  message = '文章未保存是否確定離開？',
 ): void => {
   const beforeUnloadHandler = (event: any) => {
     if (comparedFn()) {

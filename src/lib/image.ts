@@ -46,7 +46,7 @@ export const addImageUrlResizeQuery = (url: string, size: number) => {
   const parsedUrl = new URL(url)
 
   if (parsedUrl.host === TENCENT_CDN_DOMAIN) {
-    // Tencent Cloud 数据万象
+    // Tencent Cloud 數據萬象
     // ?imageMogr2/thumbnail/300x
 
     return `${url}?imageMogr2/thumbnail/${size}x/strip`
