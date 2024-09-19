@@ -21,7 +21,7 @@ export const dashboardRoutes = {
 
   children: [
     {
-      title: '仪表盘',
+      title: '儀錶盤',
       icon: <i className="icon-[mingcute--dashboard-line]" />,
 
       path: '',
@@ -38,19 +38,19 @@ export const dashboardRoutes = {
           path: '/list',
         },
         {
-          title: '编辑',
+          title: '編輯',
           icon: <i className="icon-[mingcute--pen-line]" />,
           path: '/edit',
         },
         {
-          title: '分类/标签',
+          title: '分類/標籤',
           icon: <i className="icon-[mingcute--pen-line]" />,
           path: '/category',
         },
       ],
     },
     {
-      title: '手记',
+      title: '手記',
       icon: <i className="icon-[mingcute--quill-pen-line]" />,
       redirect: '/dashboard/notes/list',
       path: '/notes',
@@ -61,29 +61,29 @@ export const dashboardRoutes = {
           path: '/list',
         },
         {
-          title: '编辑',
+          title: '編輯',
           icon: <i className="icon-[mingcute--pen-line]" />,
           path: '/edit',
         },
         {
-          title: '话题',
+          title: '話題',
           icon: <IconParkOutlineTopic />,
           path: '/topics',
         },
       ],
     },
     {
-      title: '评论',
+      title: '評論',
       icon: <i className="icon-[mingcute--comment-line]" />,
       path: '/comments',
     },
     {
-      title: '页面',
+      title: '頁面',
       icon: <i className="icon-[mingcute--file-line]" />,
       path: '/pages',
     },
     {
-      title: '完整功能与其他设置',
+      title: '完整功能與其他設置',
       icon: <i className="icon-[mingcute--settings-1-line]" />,
       path: '/vue',
     },

@@ -118,7 +118,7 @@ export function UserAuth() {
                       <i className="icon-[mingcute--dashboard-3-line] size-4" />
                     }
                   >
-                    轻管理
+                    輕管理
                   </DropdownMenuItem>
                   <DropdownMenuItem
                     onClick={() => {

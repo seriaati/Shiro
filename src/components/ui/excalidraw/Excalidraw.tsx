@@ -58,7 +58,7 @@ export const Excalidraw = forwardRef<
     if (!data) return {}
     const tryParseJson = safeJsonParse(data)
     if (!tryParseJson) {
-      // 1. data 是 string，取第一行判断
+      // 1. data 是 string，取第一行判斷
       const splittedLines = data.split('\n')
       const firstLine = splittedLines[0]
       const otherLines = splittedLines.slice(1).join('\n')
@@ -69,13 +69,13 @@ export const Excalidraw = forwardRef<
         props.refUrl = firstLine
       }
       // 第一行是 ref:file/:filename
-      // 命中后端文件
+      // 命中後端文件
       else if (firstLine.startsWith('ref:')) {
         props.refUrl = `${API_URL}/objects/${firstLine.slice(4)}`
       }
 
       if (otherLines.trim().length > 0) {
-        // 识别为其他行是 delta diff
+        // 識別為其他行是 delta diff
 
         props.patchDiffDelta = safeJsonParse(otherLines)
       }

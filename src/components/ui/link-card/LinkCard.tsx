@@ -305,7 +305,7 @@ const fetchGitHubRepoData: FetchObject = {
 
 const fetchGitHubCommitData: FetchObject = {
   isValid: (id) => {
-    // 假设 'gh-commit' 类型的 id 应该是 'username/repo/commit/commitId' 的形式
+    // 假設 'gh-commit' 類型的 id 應該是 'username/repo/commit/commitId' 的形式
     const parts = id.split('/')
     return (
       parts.length === 4 &&
@@ -515,12 +515,12 @@ const fetchTheMovieDBData: FetchObject = {
 
 const fetchLeetCodeQuestionData: FetchObject = {
   isValid: (id) => {
-    // 检查 titleSlug 是否是一个有效的字符串
+    // 檢查 titleSlug 是否是一個有效的字符串
     return typeof id === 'string' && id.length > 0
   },
   fetch: async (id, setCardInfo, setFullUrl) => {
     try {
-      //获取题目信息
+      //獲取題目信息
       const body = {
         query: `query questionData($titleSlug: String!) {\n  question(titleSlug: $titleSlug) {translatedTitle\n   difficulty\n    likes\n     topicTags { translatedName\n }\n    stats\n  }\n}\n`,
         variables: { titleSlug: id },
@@ -539,7 +539,7 @@ const fetchLeetCodeQuestionData: FetchObject = {
       })
       const questionTitleData = camelcaseKeys(questionData.data.question)
       const stats = JSON.parse(questionTitleData.stats)
-      // 设置卡片信息
+      // 設置卡片信息
       setCardInfo({
         title: (
           <>

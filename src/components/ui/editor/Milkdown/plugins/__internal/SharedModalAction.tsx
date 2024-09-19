@@ -30,7 +30,7 @@ export const SharedModalAction: Component<{
     <div className="mt-4 flex justify-end space-x-2 p-2">
       {children}
       <StyledButton variant="secondary" onClick={deleteNode}>
-        删除
+        刪除
       </StyledButton>
 
       <StyledButton

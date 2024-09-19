@@ -211,29 +211,29 @@ const ExcalidrawBoard: FC = () => {
         if (editorOption.delta) {
           const currentData = valueRef.current
           if (!currentData) {
-            toast.error('无法获取当前数据，更新失败')
+            toast.error('無法獲取當前數據，更新失敗')
             return
           }
 
-          // 如果是增量存储
+          // 如果是增量存儲
 
           if (!initialContent) {
-            // 没有初始数据的话，直接刷新文件 Link
+            // 沒有初始數據的話，直接刷新文件 Link
             return fullFileUpdateAsLink()
           }
 
-          // 初始数据是嵌入式数据
+          // 初始數據是嵌入式數據
           const isEmbeddedData = safeJsonParse(initialContent)
           if (isEmbeddedData) {
-            // 如果是嵌入式数据，直接更新为 link
+            // 如果是嵌入式數據，直接更新為 link
             return fullFileUpdateAsLink()
           }
 
-          // 初始数据是文件链接
+          // 初始數據是文件鏈接
           const dataRefData = excalidrawRef.current?.getRefData()
 
           if (!dataRefData) {
-            toast.error('无法获取原始数据增量更新失败')
+            toast.error('无法获取原始数据增量更新失敗')
             return
           }
 
@@ -249,7 +249,7 @@ const ExcalidrawBoard: FC = () => {
         }
 
         async function fullFileUpdateAsLink() {
-          // 更新为链接类型
+          // 更新為鏈接類型
           const currentData = valueRef.current
           if (!currentData) return
 
@@ -259,12 +259,12 @@ const ExcalidrawBoard: FC = () => {
           }
 
           const file = new File([currentData], 'file.excalidraw', {})
-          const infoToast = toast.info('正在上传文件', {
+          const infoToast = toast.info('正在上傳文件', {
             position: 'top-right',
           })
           const result = await uploadFileToServer(FileTypeEnum.File, file)
 
-          toast.success('上传成功', { position: 'top-right' })
+          toast.success('上傳成功', { position: 'top-right' })
           toast.dismiss(infoToast)
           const refName = `ref:file/${result.name}`
           alreadyUploadValueFileMap[currentData] = refName
@@ -297,14 +297,14 @@ const ExcalidrawBoard: FC = () => {
             <div className="relative">
               <div className="absolute bottom-1 left-1 space-x-2">
                 <CheckBoxLabel
-                  label="使用内嵌数据"
+                  label="使用內嵌數據"
                   onCheckChange={(checked) => {
                     setEditorOption((prev) => ({ ...prev, embed: checked }))
                   }}
                   checked={editorOption.embed}
                 />
                 <CheckBoxLabel
-                  label="使用增量存储"
+                  label="使用增量存儲"
                   checked={editorOption.embed ? false : editorOption.delta}
                   disabled={editorOption.embed}
                   onCheckChange={(checked) => {
@@ -328,16 +328,16 @@ const ExcalidrawBoard: FC = () => {
                   onClick={async () => {
                     const value = await getFinalSaveValue()
                     if (!value) {
-                      toast.error('无法获取当前数据')
+                      toast.error('無法獲取當前數據')
                       return
                     }
                     await navigator.clipboard.writeText(
                       `\`\`\`excalidraw\n${value}\n\`\`\``,
                     )
-                    toast.success('已复制', { position: 'top-right' })
+                    toast.success('已複製', { position: 'top-right' })
                   }}
                 >
-                  复制
+                  複製
                 </StyledButton>
               </SharedModalAction>
             </div>

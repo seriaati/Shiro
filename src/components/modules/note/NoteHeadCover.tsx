@@ -25,7 +25,7 @@ function cropImageTo16by9(src: string): Promise<string> {
       const left = (img.width - cropWidth) / 2
       const top = (img.height - cropHeight) / 2
 
-      // 设置 canvas 尺寸和绘制裁剪的图像
+      // 設置 canvas 尺寸和繪制裁剪的圖像
       canvas.width = cropWidth
       canvas.height = cropHeight
       ctx.drawImage(
@@ -40,7 +40,7 @@ function cropImageTo16by9(src: string): Promise<string> {
         cropHeight,
       )
 
-      // 转换 canvas 内容为 blob URL
+      // 轉換 canvas 內容為 blob URL
       canvas.toBlob((blob) => {
         if (blob) {
           const url = URL.createObjectURL(blob)
@@ -52,7 +52,7 @@ function cropImageTo16by9(src: string): Promise<string> {
     }
     img.onerror = reject
 
-    // 设置图像源以开始加载
+    // 設置图像源以开始加载
     img.src = src
   })
 }

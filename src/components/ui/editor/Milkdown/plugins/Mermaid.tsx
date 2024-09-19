@@ -40,7 +40,7 @@ const MermaidRender = () => {
           <TextArea defaultValue={defaultValue} className="grow" ref={ref} />
           <div className="mt-4 flex justify-end space-x-2">
             <StyledButton variant="secondary" onClick={deleteNode}>
-              删除
+              刪除
             </StyledButton>
             <StyledButton
               onClick={() => {

@@ -114,7 +114,7 @@ const MenuBar = () => {
         const nextNode = schema.node(excalidrawSchema.type(ctx), {})
         const { tr } = state
         tr.replaceSelectionWith(nextNode)
-        // 判断是否插入的 node 位于文档的末尾
+        // 判斷是否插入的 node 位於文檔的末尾
         const isNewNodeIsEof =
           currentCursorPosition === state.doc.content.size ||
           currentCursorPosition + 1 === state.doc.content.size
@@ -139,7 +139,7 @@ const MenuBar = () => {
 
         const { tr } = state
         tr.replaceSelectionWith(nextNode)
-        // 判断是否插入的 node 位于文档的末尾
+        // 判斷是否插入的 node 位於文檔的末尾
         const isNewNodeIsEof =
           currentCursorPosition === state.doc.content.size ||
           currentCursorPosition + 1 === state.doc.content.size
