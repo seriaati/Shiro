@@ -92,11 +92,6 @@ export const headerMenuConfig: IHeaderMenu[] = [
         icon: h(MdiFlask),
         path: '/projects',
       },
-      {
-        title: '一言',
-        path: '/says',
-        icon: h(FaSolidComments),
-      },
     ],
   },
 ]

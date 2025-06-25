@@ -234,11 +234,6 @@ const windsock = [
     path: '/timeline',
   },
   {
-    title: '朋友們',
-    icon: FaSolidUserFriends,
-    path: '/friends',
-  },
-  {
     title: '寫下一點思考',
     icon: MdiLightbulbOn20,
     path: '/thinking',
@@ -247,16 +242,6 @@ const windsock = [
     title: '看看我做些啥',
     icon: MdiFlask,
     path: '/projects',
-  },
-  {
-    title: '記錄下一言',
-    path: '/says',
-    icon: FaSolidComments,
-  },
-  {
-    title: '躍遷',
-    icon: RMixPlanet,
-    path: 'https://travel.moe/go.html',
   },
 ]
 
