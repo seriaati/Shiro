@@ -187,7 +187,7 @@ const Hero = () => {
           )}
         >
           <small className="text-center">
-            當第一顆衛星飛向大氣層外，我們便以為自己終有一日會征服宇宙。
+            休息是為了走更長遠的路，懶惰是為了找出更有效率的最佳解。
           </small>
           <span className="mt-8 animate-bounce">
             <i className="i-mingcute-right-line rotate-90 text-2xl" />
