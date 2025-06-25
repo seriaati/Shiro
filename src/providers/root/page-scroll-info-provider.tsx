@@ -36,8 +36,8 @@ const ScrollDetector = () => {
         }
         let currentTop = document.documentElement.scrollTop
 
-        // 当 radix modal 被唤出，body 会被设置为 fixed，此时需要获取 body 的 top 值。
-        // 只有在 mobile 端会出现这种逻辑
+        // 當 radix modal 被喚出，body 會被設置為 fixed，此時需要獲取 body 的 top 值。
+        // 只有在 mobile 端會出現這種邏輯
         if (currentTop === 0) {
           const bodyStyle = document.body.style
           if (bodyStyle.position === 'fixed') {

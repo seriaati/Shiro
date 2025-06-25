@@ -40,7 +40,7 @@ const Tweet = dynamic(() => import('~/components/modules/shared/Tweet'), {
 })
 
 /**
- * 单行链接的渲染
+ * 單行鏈接的渲染
  */
 export const BlockLinkRenderer = ({
   href,
@@ -187,7 +187,7 @@ export const BlockLinkRenderer = ({
             <ClientOnly
               fallback={
                 <BlockLoading className="absolute inset-0 size-full rounded-md">
-                  哔哩哔哩视频加载中...
+                  嗶哩嗶哩視頻加載中...
                 </BlockLoading>
               }
             >

@@ -82,7 +82,7 @@ export const EllipsisTextWithTooltip = (props: EllipsisProps) => {
 }
 
 /**
- * 横向文本溢出时，显示省略号并且鼠标悬浮时显示完整文本
+ * 橫向文本溢出時，顯示省略號並且鼠標懸浮時顯示完整文本
  */
 export const EllipsisHorizontalTextWithTooltip = (props: EllipsisProps) => {
   const { className, ...rest } = props

@@ -87,7 +87,7 @@ export const ImageDetailSection: FC<ImageDetailSectionProps> = (props) => {
     }
     const nextImages = basedImages.concat()
     if (extraImages) {
-      // 需要过滤存在的图片
+      // 需要過濾存在的圖片
       extraImages.forEach((src) => {
         if (!srcSet.has(src)) {
           nextImages.push({
@@ -141,7 +141,7 @@ export const ImageDetailSection: FC<ImageDetailSectionProps> = (props) => {
     fetchImageTasks.forEach((task) => {
       if (task.status === 'fulfilled') nextImageDimensions.push(task.value)
       else {
-        toast.error(`获取图片信息失败：${task.reason.src}: ${task.reason.err}`)
+        toast.error(`獲取圖片信息失敗：${task.reason.src}: ${task.reason.err}`)
       }
     })
 
@@ -181,7 +181,7 @@ export const ImageDetailSection: FC<ImageDetailSectionProps> = (props) => {
       {hasTopDivider && <Divider />}
       <div className="relative flex w-full flex-col">
         <div className="flex items-center justify-between space-x-2">
-          <div className="inline-block shrink grow">图片信息</div>
+          <div className="inline-block shrink grow">圖片信息</div>
           <StyledButton
             className="flex items-center gap-1 self-end"
             onClick={handleCorrectImageDimensions}
@@ -189,7 +189,7 @@ export const ImageDetailSection: FC<ImageDetailSectionProps> = (props) => {
             disabled={loading}
           >
             {loading && <i className="loading loading-spinner loading-sm" />}
-            刷新图片信息
+            刷新圖片信息
           </StyledButton>
         </div>
         <div className="my-2 flex flex-col gap-2">
@@ -227,7 +227,7 @@ const Item: FC<
           }}
         />
         <AdvancedInput
-          label="宽度"
+          label="寬度"
           value={image.width?.toString() || ''}
           onChange={(e) => {
             const validValue = Number.parseInt(e.target.value)
@@ -236,7 +236,7 @@ const Item: FC<
           }}
         />
         <AdvancedInput
-          label="类型"
+          label="類型"
           value={image.type?.toString() || ''}
           onChange={(e) => {
             handleOnChange(image.src, 'type', e.target.value)
@@ -245,7 +245,7 @@ const Item: FC<
       </AdvancedInputProvider>
 
       <div className="flex items-center gap-1">
-        <Label htmlFor="color-picker">色调</Label>
+        <Label htmlFor="color-picker">色調</Label>
         <ColorPicker
           accent={image.accent || '#fff'}
           onChange={(hex) => {

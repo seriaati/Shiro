@@ -28,7 +28,7 @@ export const ReplyModal = (props: { comment: CommentModel }) => {
   const handleReply = useEventCallback(async () => {
     const text = getValue()
     if (!text) {
-      toast.error('回复内容不能为空')
+      toast.error('回復內容不能為空')
       return
     }
 
@@ -71,7 +71,7 @@ export const ReplyModal = (props: { comment: CommentModel }) => {
       onSubmit={handleSubmit}
     >
       <div className="mb-8">
-        <Label>回复 {author}：</Label>
+        <Label>回復 {author}：</Label>
         <div className="relative mt-4 h-[100px]">
           <TextArea
             bordered={false}
@@ -87,7 +87,7 @@ export const ReplyModal = (props: { comment: CommentModel }) => {
         </div>
       </div>
 
-      <Label htmlFor="reply">回复内容：</Label>
+      <Label htmlFor="reply">回復内容：</Label>
       <div className="relative mt-4 h-[200px]">
         <TextArea
           autoFocus
@@ -109,7 +109,7 @@ export const ReplyModal = (props: { comment: CommentModel }) => {
 
       <div className="mt-4 flex justify-end gap-2">
         <StyledButton onClick={handleReply} type="submit">
-          回复
+          回復
         </StyledButton>
       </div>
     </form>

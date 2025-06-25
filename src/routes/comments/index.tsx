@@ -22,7 +22,7 @@ import { Tabs } from '~/components/ui/tabs'
 import { adminQueries } from '~/queries/definition'
 
 export const config = {
-  title: '评论',
+  title: '評論',
   icon: <i className="i-mingcute-comment-line" />,
   priority: 3,
 }
@@ -32,14 +32,14 @@ export function Component() {
     () => [
       {
         key: CommentState.Unread,
-        title: '未读',
+        title: '未讀',
         component: CommentTable,
         titleComponent: UnreadTabTitle,
       },
 
       {
         key: CommentState.Read,
-        title: '已读',
+        title: '已讀',
         component: CommentTable,
       },
 
@@ -108,7 +108,7 @@ export function Component() {
 
 const UnreadTabTitle: FC = () => (
   <span className="inline-block space-x-1 pb-1">
-    <span>未读</span>
+    <span>未讀</span>
   </span>
 )
 

@@ -110,31 +110,31 @@ export const CodeBlockRender = (props: {
 }
 
 /**
- *  格式化代码：去除多余的缩进。
-    多余的缩进：如果所有代码行中，开头都包括 n 个空格，那么开头的空格是多余的
+ *  格式化代碼：去除多餘的縮進。
+    多餘的縮進：如果所有代碼行中，開頭都包括 n 個空格，那麼開頭的空格是多餘的
  *
  */
 function formatCode(code: string): string {
   const lines = code.split('\n')
 
-  // 计算最小的共同缩进（忽略空行）
+  // 計算最小的共同縮進（忽略空行）
   let minIndent = Number.MAX_SAFE_INTEGER
   lines.forEach((line) => {
     if (line.trim().length > 0) {
-      // 忽略纯空格行
+      // 忽略純空格行
       const leadingSpaces = line.match(/^ */)?.[0].length
       if (leadingSpaces === undefined) return
       minIndent = Math.min(minIndent, leadingSpaces)
     }
   })
 
-  // 如果所有行都不包含空格或者只有空行，则不做处理
+  // 如果所有行都不包含空格或者只有空行，則不做處理
   if (minIndent === Number.MAX_SAFE_INTEGER) return code
 
-  // 移除每行的共同最小缩进
+  // 移除每行的共同最小縮進
   const formattedLines = lines.map((line) => {
     if (line.trim().length === 0) {
-      // 如果是空行，则直接返回，避免移除空行的非空格字符（例如\t）
+      // 如果是空行，則直接返回，避免移除空行的非空格字符（例如\t）
       return line
     } else {
       return line.slice(Math.max(0, minIndent))

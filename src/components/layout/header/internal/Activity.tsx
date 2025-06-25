@@ -145,7 +145,7 @@ const ActivityIcon = memo(() => {
             type="tooltip"
             strategy="fixed"
           >
-            {ownerName} 正在听 {media.title} - {media.artist}
+            {ownerName} 正在聽 {media.title} - {media.artist}
           </FloatPopover>
         </m.div>
       )}

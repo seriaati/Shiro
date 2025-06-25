@@ -94,7 +94,7 @@ export const Gallery: FC<GalleryProps> = (props) => {
   const currentIndexRef = useStateToRef(currentIndex)
   const totalImageLengthRef = useStateToRef(images.length)
 
-  // 向后翻页状态
+  // 向後翻頁狀態
   const isForward = useRef(true)
 
   const autoplayRef = useRef(true)

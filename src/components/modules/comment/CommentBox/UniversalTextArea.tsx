@@ -72,7 +72,7 @@ export const UniversalTextArea: Component = ({ className }) => {
             $ta.selectionStart = shouldMoveToPos
             $ta.selectionEnd = shouldMoveToPos
             $ta.focus()
-            // 上面设置的光标，可能不在可见区域内，因此 scroll 到光标所在位置
+            // 上面設置的光標，可能不在可見區域內，因此 scroll 到光標所在位置
             scrollTextareaToCursor(taRef)
           })
         }

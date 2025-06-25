@@ -30,21 +30,21 @@ const Help = () => {
       <div className="space-y-2 leading-relaxed">
         <p className="flex items-center space-x-1 opacity-80">
           <i className="i-mingcute-question-line" />
-          <span className="font-medium">这是如何实现的？</span>
+          <span className="font-medium">這是如何實現的？</span>
         </p>
         <p>
-          当你打开这个页面时，会自动建立 WebSocket
-          连接，当成功连接后服务器会推送当前浏览页面的人数。
+          當你打開這個頁面時，會自動建立 WebSocket
+          連接，当成功連接后服务器会推送當前浏览页面的人数。
         </p>
         <p>
           WebSocket
-          用于通知站点，站长在站点的实时活动，包括不限于文章的发布和更新。
+          用於通知站點，站長在站點的實時活動，包括不限於文章的發布和更新。
         </p>
 
         <Divider />
 
         <p>
-          当前 Socket 状态： <ConnectedIndicator />
+          當前 Socket 狀態： <ConnectedIndicator />
         </p>
       </div>
     </FloatPopover>
@@ -70,7 +70,7 @@ function ConnectionStatus({ isConnected }: { isConnected: boolean }) {
   const secondaryColor = isConnected
     ? 'rgba(174, 244, 194, 0.46)'
     : 'rgba(244, 174, 174, 0.46)'
-  const text = isConnected ? '已连接' : '未连接'
+  const text = isConnected ? '已連接' : '未連接'
 
   const backgroundStyle = {
     background: `radial-gradient(45.91% 45.91% at 49.81% 54.09%, ${color} 7.13%, ${secondaryColor} 65.83%, rgba(252, 252, 252, 0.00) 100%)`,
@@ -168,10 +168,10 @@ const RoomsInfo = () => {
       </div>
     )
   if (data.length === 0)
-    return <div className="text-gray-500">还没有小伙伴在阅览文章哦~</div>
+    return <div className="text-gray-500">還沒有小伙伴在閱覽文章哦~</div>
   return (
     <div className="lg:max-w-[400px]">
-      <div className="mb-2 text-sm font-medium">下面的内容正在被看爆：</div>
+      <div className="mb-2 text-sm font-medium">下面的內容正在被看爆：</div>
       <ul className="flex flex-col justify-between gap-2">
         {data.map((room) => (
           <li key={room.path} className="flex items-center justify-between">

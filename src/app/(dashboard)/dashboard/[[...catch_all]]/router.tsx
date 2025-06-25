@@ -52,7 +52,7 @@ interface FileConfig {
 function parseRoutes(data: Record<string, FileConfig>): RouteItem[] {
   const routes: Record<string, RouteItem> = {}
 
-  // 首先处理所有的路由
+  // 首先處理所有的路由
   for (const [file, fileConfig] of Object.entries(data)) {
     const segments = file.split('/')
     const isIndex = segments.at(-1) === 'index.tsx'
@@ -69,7 +69,7 @@ function parseRoutes(data: Record<string, FileConfig>): RouteItem[] {
     }
   }
 
-  // 构建嵌套结构
+  // 構建嵌套結構
   const result: RouteItem[] = []
   for (const route of Object.values(routes)) {
     const segments = route.path.split('/').filter(Boolean)
@@ -88,7 +88,7 @@ function parseRoutes(data: Record<string, FileConfig>): RouteItem[] {
     }
   }
 
-  // 递归排序
+  // 遞歸排序
   function sortRoutes(routes: RouteItem[]) {
     routes.sort((a, b) => a.config.priority - b.config.priority)
     routes.forEach((route) => {

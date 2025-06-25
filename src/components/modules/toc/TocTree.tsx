@@ -58,7 +58,7 @@ export const TocTree: Component<
     $headings: HTMLHeadingElement[]
     containerRef?: React.MutableRefObject<HTMLUListElement | null>
     /**
-     * 下次循环中跳转，在 Modal 中很管用
+     * 下次循環中跳轉，在 Modal 中很管用
      */
     scrollInNextTick?: boolean
 
@@ -189,7 +189,7 @@ const MemoedItem = memo<{
     const $container = $item.parentElement
     if (!$container) return
 
-    // 把当前 active Item 滚动到容器的中间
+    // 把當前 active Item 滾動到容器的中間
     const containerHeight = $container.clientHeight
     const itemHeight = $item.clientHeight
     const itemOffsetTop = $item.offsetTop

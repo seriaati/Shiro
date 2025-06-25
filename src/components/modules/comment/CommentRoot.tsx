@@ -20,10 +20,10 @@ export const CommentAreaRoot: FC<
   // if (isCN) return <NotSupport />
 
   const { allowComment, refId } = props
-  // 兜下后端的数据，默认开
+  // 兜下後端的數據，默認開
   if (!allowComment && allowComment !== undefined) {
     return (
-      <p className="mt-[7.1rem] text-center text-xl font-medium">评论已关闭</p>
+      <p className="mt-[7.1rem] text-center text-xl font-medium">評論已關閉</p>
     )
   }
 

@@ -57,11 +57,11 @@ export const XLogSummaryAsync = async (
         </Suspense>
       </AutoResizeHeight>
       <p className="mt-3 border-slate-200 text-right text-sm dark:border-slate-800">
-        (此服务由{' '}
+        (此服務由{' '}
         <a href="https://xlog.app" target="_blank" rel="noreferrer">
           xLog
         </a>{' '}
-        驱动)
+        驅動)
       </p>
     </div>
   )

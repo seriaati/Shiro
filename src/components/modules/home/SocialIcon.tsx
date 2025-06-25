@@ -51,13 +51,13 @@ const iconSet: Record<
   },
   rss: ['RSS', <i className="i-mingcute-rss-line" />, '#FFA500', (id) => id],
   bilibili: [
-    '哔哩哔哩',
+    '嗶哩嗶哩',
     <BilibiliIcon />,
     '#00A1D6',
     (id) => `https://space.bilibili.com/${id}`,
   ],
   netease: [
-    '网易云音乐',
+    '網易雲音樂',
     <NeteaseCloudMusicIcon />,
     '#C20C0C',
     (id) => `https://music.163.com/#/user/home?id=${id}`,

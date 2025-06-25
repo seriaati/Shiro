@@ -167,11 +167,11 @@ export const ImageLazy: Component<TImageProps & BaseImageProps> = ({
           {imageLoadStatus === ImageLoadStatus.Error && (
             <div className="center absolute inset-0 z-[1] flex flex-col gap-8">
               <i className="i-mingcute-close-line text-4xl text-red-500" />
-              <span>图片加载失败</span>
+              <span>圖片加載失敗</span>
 
               <Divider className="w-[80px] opacity-80" />
               <a href={src} target="_blank" rel="noreferrer">
-                <span>查看原图</span>
+                <span>查看原圖</span>
               </a>
             </div>
           )}

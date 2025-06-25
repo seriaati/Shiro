@@ -117,7 +117,7 @@ const AuthjsLoginModalContent = () => {
         />
       </div>
       <div className="-mt-0 text-center">
-        登录到 <b>{title}</b>
+        登錄到 <b>{title}</b>
       </div>
 
       <div className="mt-6">

@@ -44,7 +44,7 @@ export const Comment: Component<{
   }, [comment?.text])
   const reader = useCommentReader(comment.readerId)
 
-  // FIXME 兜一下后端给的脏数据
+  // FIXME 兜一下後端給的髒數據
   if (typeof comment === 'string') return null
   const {
     id: cid,
@@ -164,7 +164,7 @@ export const Comment: Component<{
                     </span>
                     {!!location && (
                       <span className="min-w-0 max-w-full truncate break-all text-[0.71rem] opacity-35">
-                        来自：{location}
+                        來自：{location}
                       </span>
                     )}
                     {!!isWhispers && <OcticonGistSecret />}

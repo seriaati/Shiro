@@ -28,7 +28,7 @@ export const NoteFooterNavigation = () => {
 
   return (
     <>
-      {/* // 没有 0 的情况 */}
+      {/* // 沒有 0 的情況 */}
       {(!!prevNid || !!nextNid) && (
         <>
           <section className="relative mt-4 py-2 text-center" data-hide-print>
@@ -54,7 +54,7 @@ export const NoteFooterNavigation = () => {
                   scroll={false}
                   className="hover:text-accent"
                 >
-                  <span>后一篇</span>
+                  <span>後一篇</span>
                   <i className="i-mingcute-arrow-right-line" />
                 </Link>
               )}
@@ -73,7 +73,7 @@ export const NoteFooterNavigation = () => {
                 )
               }}
             >
-              <span>时间线</span>
+              <span>時間線</span>
               <MdiClockTimeThreeOutline />
             </div>
           </section>
