@@ -29,7 +29,7 @@ export class CrossBellConnector {
     await contract.walletClient.requestAddresses()
 
     if (!contract.account.address) {
-      throw new Error('未连接到 metamask')
+      throw new Error('未連接到 metamask')
     }
     this.contract = contract
     return contract
@@ -101,7 +101,7 @@ export class CrossBellConnector {
             'tags' in data
               ? data.tags.toString()
               : this.isNoteModel(data)
-                ? '手记'
+                ? '手記'
                 : '',
           publishedAt: data.created,
         }
@@ -149,7 +149,7 @@ export class CrossBellConnector {
 
       await post().catch((err) => {
         console.error(err)
-        toast.error('xLog 发布失败')
+        toast.error('xLog 發布失敗')
 
         throw err
       })
@@ -162,7 +162,7 @@ export class CrossBellConnector {
       }
 
       if (!nextPageId) {
-        toast.error('无法获取 Crossbell Note pageId 任务终止')
+        toast.error('無法獲取 Crossbell Note pageId 任務終止')
         return
       }
       // update meta for pageId
@@ -174,7 +174,7 @@ export class CrossBellConnector {
         nextPageId.split('-')[1],
       )
       if (!crossbellNoteData) {
-        toast.error('无法获取 Crossbell Note 任务终止')
+        toast.error('無法獲取 Crossbell Note 任務終止')
         return
       }
       const {
