@@ -44,8 +44,8 @@ export default function Page() {
   return (
     <div>
       <header className="prose">
-        <h1>思考</h1>
-        <h3>謝謝你聽我訴說</h3>
+        <h1>速記</h1>
+        <h3>想到什麼就寫什麼</h3>
       </header>
 
       <main className="mt-10">

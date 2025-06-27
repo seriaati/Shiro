@@ -229,12 +229,12 @@ const windsock = [
     icon: FaSolidFeatherAlt,
   },
   {
-    title: '度過的時光呀',
+    title: '度過的時光',
     icon: FaSolidHistory,
     path: '/timeline',
   },
   {
-    title: '寫下一點思考',
+    title: '臨時想到的東西',
     icon: MdiLightbulbOn20,
     path: '/thinking',
   },
