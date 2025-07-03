@@ -26,7 +26,7 @@ export interface IHeaderMenu {
 }
 export const headerMenuConfig: IHeaderMenu[] = [
   {
-    title: '首页',
+    title: '首頁',
     path: '/',
     type: 'Home',
     icon: h(FaSolidDotCircle),
@@ -40,7 +40,7 @@ export const headerMenuConfig: IHeaderMenu[] = [
     icon: h(IcTwotoneSignpost),
   },
   {
-    title: '手记',
+    title: '手記',
     type: 'Note',
     path: '/notes',
     icon: h(FaSolidFeatherAlt),
@@ -48,12 +48,12 @@ export const headerMenuConfig: IHeaderMenu[] = [
   },
 
   {
-    title: '时光',
+    title: '時光',
     icon: h(FaSolidHistory),
     path: '/timeline',
     subMenu: [
       {
-        title: '手记',
+        title: '手記',
         icon: h(FaSolidFeatherAlt),
         path: '/timeline?type=note',
       },
@@ -62,24 +62,7 @@ export const headerMenuConfig: IHeaderMenu[] = [
         icon: h(IonBook),
         path: '/timeline?type=post',
       },
-      {
-        title: '回忆',
-        icon: h(FaSolidCircle),
-        path: '/timeline?memory=1',
-      },
-      {
-        title: '专栏',
-        path: '/notes/topics',
-        icon: h('i', {
-          className: 'i-mingcute-align-bottom-fill flex center',
-        }),
-      },
     ],
-  },
-  {
-    title: '友链',
-    icon: h(FaSolidUserFriends),
-    path: '/friends',
   },
 
   {
@@ -88,7 +71,7 @@ export const headerMenuConfig: IHeaderMenu[] = [
     path: '#',
     subMenu: [
       {
-        title: '思考',
+        title: '速記',
         icon: h(MdiLightbulbOn20),
         path: '/thinking',
       },
