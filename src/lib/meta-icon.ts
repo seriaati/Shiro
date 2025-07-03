@@ -25,8 +25,8 @@ import {
 export const weather2icon = (weather: string) => {
   const map: Record<string, FC> = {
     晴: PhSunBold,
-    多云: RiSunCloudyFill,
-    阴: MdiCloud,
+    多雲: RiSunCloudyFill,
+    陰: MdiCloud,
     雪: MdiSnowflake,
     雨: BiCloudRainFill,
     雷雨: BiCloudLightningRainFill,
@@ -36,19 +36,19 @@ export const weather2icon = (weather: string) => {
 
 export const mood2icon = (mood: string) => {
   const map: Record<string, FC> = {
-    开心: EmojiSmile,
-    伤心: EmojiSadTear,
+    開心: EmojiSmile,
+    傷心: EmojiSadTear,
     大哭: EmojiSadCry,
-    生气: EmojiAngry,
+    生氣: EmojiAngry,
     痛苦: EmojiTired,
     悲哀: EmojiMeh,
     不快: EmojiMeh,
-    激动: EmojiGrinSquintTears,
-    担心: EmojiFrownOpen,
+    激動: EmojiGrinSquintTears,
+    擔心: EmojiFrownOpen,
     可怕: EmojiGrimace,
-    可恶: EmojiAngry,
-    绝望: EmojiFrownOpen,
-    焦虑: EmojiFlushed,
+    可惡: EmojiAngry,
+    絕望: EmojiFrownOpen,
+    焦慮: EmojiFlushed,
   }
   return React.createElement(map[mood] || EmojiSmile)
 }

@@ -164,7 +164,7 @@ export const eventHandler = (
     case EventTypes.NOTE_CREATE: {
       const { title, nid } = data as NoteModel
 
-      toast.success(`有新的内容发布了：「${title}」`, {
+      toast.success(`有新的內容發布了：「${title}」`, {
         onClick: () => {
           window.peek(`/notes/${nid}`)
         },
@@ -178,7 +178,7 @@ export const eventHandler = (
 
     case EventTypes.POST_CREATE: {
       const { title, category, slug } = data as PostModel
-      toast.success(`有新的内容发布了：「${title}」`, {
+      toast.success(`有新的內容發布了：「${title}」`, {
         onClick: () => {
           window.peek(`/posts/${category.slug}/${slug}`)
         },
@@ -202,7 +202,7 @@ export const eventHandler = (
         //   },
         // )
       } else {
-        toast.success(`写下一点小思考：\n${(data as RecentlyModel).content}`, {
+        toast.success(`寫下一點小思考：\n${(data as RecentlyModel).content}`, {
           autoClose: 10000,
           iconElement: React.createElement(MdiLightbulbOn20),
           onClick: () => {
@@ -296,7 +296,7 @@ export const eventHandler = (
     }
 
     case 'fn#shiro#update': {
-      toast.info('网站已更新，请刷新页面', {
+      toast.info('網站已更新，請刷新頁面', {
         onClick: () => {
           location.reload()
         },
