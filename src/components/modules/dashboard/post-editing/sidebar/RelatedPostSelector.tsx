@@ -79,7 +79,7 @@ export const RelatedPostSelector = () => {
                 }}
               >
                 <i className="i-mingcute-delete-2-line text-base" />
-                <span className="sr-only">删除</span>
+                <span className="sr-only">刪除</span>
               </MotionButtonBase>
             </MotionButtonBase>
           )

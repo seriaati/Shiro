@@ -188,7 +188,7 @@ const ShareButton = () => {
           }),
         ).href
 
-        const text = `嘿，我发现了一片宝藏文章「${note.title}」哩，快来看看吧！`
+        const text = `嘿，我發現了一片寶藏文章「${note.title}」哩，快來看看吧！`
 
         if (hasShare)
           navigator.share({

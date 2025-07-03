@@ -112,10 +112,10 @@ export const WithArticleSelectionAction: Component<{
                   onClick={() => {
                     navigator.clipboard.writeText(selectedText)
                     setShow(false)
-                    toast.success('已复制到剪贴板')
+                    toast.success('已複製到剪贴板')
                   }}
                 >
-                  复制
+                  複製
                 </MotionButtonBase>
                 <DividerVertical className="mx-1" />
               </>
@@ -141,7 +141,7 @@ export const WithArticleSelectionAction: Component<{
                   })
                 }}
               >
-                引用评论
+                引用評論
               </MotionButtonBase>
             )}
           </m.div>

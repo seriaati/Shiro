@@ -237,9 +237,9 @@ export const DataStat = () => {
   return (
     <div className="relative @container">
       <h3 className="mb-4 text-xl font-light text-opacity-80">
-        数据看板：
+        數據看板：
         <small className="text-sm">
-          数据更新于： <RelativeTime date={new Date(dataUpdatedAt)} />
+          數據更新於： <RelativeTime date={new Date(dataUpdatedAt)} />
         </small>
       </h3>
       <div className="grid grid-cols-1 gap-6 @[550px]:grid-cols-2 @[900px]:grid-cols-3 @[1124px]:grid-cols-4 @[1200px]:grid-cols-5">

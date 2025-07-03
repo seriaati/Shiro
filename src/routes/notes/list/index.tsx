@@ -89,7 +89,7 @@ const cardSlot: CardProps<NoteModel>['slots'] = {
             type="tooltip"
             triggerElement="(已编辑)"
           >
-            编辑于 <RelativeTime date={data.modified} />
+            編輯於 <RelativeTime date={data.modified} />
           </FloatPopover>
         )}
         {data.topic && (
@@ -107,7 +107,7 @@ const cardSlot: CardProps<NoteModel>['slots'] = {
             }
           >
             <div className="flex flex-col gap-1">
-              <div>专栏：{data.topic.name}</div>
+              <div>專欄：{data.topic.name}</div>
             </div>
           </FloatPopover>
         )}

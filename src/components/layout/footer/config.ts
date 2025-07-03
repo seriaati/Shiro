@@ -25,11 +25,11 @@ export const defaultLinkSections: LinkSection[] = [
         href: '/timeline',
       },
       {
-        name: '友链',
+        name: '友鏈',
         href: '/friends',
       },
       {
-        name: '监控',
+        name: '監控',
         href: 'https://status.shizuri.net/status/main',
         external: true,
       },

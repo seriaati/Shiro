@@ -126,7 +126,7 @@ const PoweredBy: Component = ({ className }) => {
           </StyledLink>
         }
       >
-        这是{' '}
+        這是{' '}
         <StyledLink
           className="underline"
           href="https://github.com/innei/Shiro"

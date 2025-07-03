@@ -65,7 +65,7 @@ export const CommentBatchActionGroup = () => {
             </RoundedIconButton>
           }
         >
-          已读
+          已讀
         </FloatPopover>
       )}
 
@@ -95,7 +95,7 @@ export const CommentBatchActionGroup = () => {
             className="bg-red-200 duration-200 hover:bg-red-400 dark:bg-red-900"
             onClick={() => {
               present({
-                title: `删除 ${selectionKeys.size} 条评论`,
+                title: `刪除 ${selectionKeys.size} 條評論`,
                 content: ({ dismiss }) => (
                   <div className="w-[400px] text-right">
                     <StyledButton
@@ -104,7 +104,7 @@ export const CommentBatchActionGroup = () => {
                         dismiss()
                       }}
                     >
-                      删除
+                      刪除
                     </StyledButton>
                   </div>
                 ),
@@ -115,7 +115,7 @@ export const CommentBatchActionGroup = () => {
           </RoundedIconButton>
         }
       >
-        删除
+        刪除
       </FloatPopover>
     </OffsetHeaderLayout>
   )

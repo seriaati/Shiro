@@ -93,7 +93,7 @@ export const headerMenuConfig: IHeaderMenu[] = [
         path: '/thinking',
       },
       {
-        title: '项目',
+        title: '項目',
         icon: h(MdiFlask),
         path: '/projects',
       },
@@ -103,7 +103,7 @@ export const headerMenuConfig: IHeaderMenu[] = [
         icon: h(FaSolidComments),
       },
       {
-        title: '跃迁',
+        title: '躍遷',
         icon: h(RMixPlanet),
         path: 'https://travel.moe/go.html',
       },

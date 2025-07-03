@@ -32,7 +32,7 @@ export function Component() {
     () => [
       {
         key: CommentState.Unread,
-        title: '未读',
+        title: '未讀',
         component: CommentTable,
         titleComponent: UnreadTabTitle,
       },
@@ -108,7 +108,7 @@ export function Component() {
 
 const UnreadTabTitle: FC = () => (
   <span className="inline-block space-x-1 pb-1">
-    <span>未读</span>
+    <span>未讀</span>
   </span>
 )
 

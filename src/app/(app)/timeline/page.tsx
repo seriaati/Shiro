@@ -145,7 +145,7 @@ export default function TimelinePage() {
         title: note.title,
         meta: [
           note.mood ? `心情：${note.mood}` : undefined,
-          note.weather ? `天气：${note.weather}` : undefined,
+          note.weather ? `天氣：${note.weather}` : undefined,
           '手记',
         ].filter(Boolean) as string[],
         date,
@@ -185,7 +185,7 @@ export default function TimelinePage() {
           <>
             <Divider className="my-8 w-[80px]" />
             <TimelineProgress />
-            <p>活在当下，珍惜眼下</p>
+            <p>活在當下，珍惜眼下</p>
           </>
         )}
       </header>

@@ -109,7 +109,7 @@ export const PostsSortingFab = () => {
         </section>
 
         <section className="mb-2 mt-4">
-          <div className="ml-1">顺序</div>
+          <div className="ml-1">順序</div>
           <Select<OrderBy>
             className={clsx(
               'mt-2',

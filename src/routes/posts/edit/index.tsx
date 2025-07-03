@@ -39,7 +39,7 @@ import { useCreatePost, useUpdatePost } from '~/queries/definition/post'
 
 export const config = defineRouteConfig({
   priority: 2,
-  title: '编辑',
+  title: '編輯',
   icon: <i className="i-mingcute-pen-line" />,
 })
 export function Component() {
@@ -112,7 +112,7 @@ const EditPage: FC<{
             <div />
           ) : (
             <span>
-              {props.initialData ? <>编辑「{editingData.title}」</> : '撰写'}
+              {props.initialData ? <>編輯「{editingData.title}」</> : '撰写'}
             </span>
           )}
           <ActionButtonGroup initialData={props.initialData} />

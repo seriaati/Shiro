@@ -770,7 +770,7 @@ const fetchQQMusicSongData: FetchObject = {
               </span>
             </span>
             <span className="block">
-              <span className="font-bold">专辑：</span>
+              <span className="font-bold">專輯：</span>
               <span>{songInfo.album.name}</span>
             </span>
           </>
@@ -826,7 +826,7 @@ const fetchNeteaseMusicSongData: FetchObject = {
               </span>
             </span>
             <span className="block">
-              <span className="font-bold">专辑：</span>
+              <span className="font-bold">專輯：</span>
               <span>{albumInfo.name}</span>
             </span>
           </>

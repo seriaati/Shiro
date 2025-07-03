@@ -305,7 +305,7 @@ const SearchPanelImpl = () => {
               type="tooltip"
               triggerElement={<i className="i-mingcute-download-2-line" />}
             >
-              下载搜索索引文件以便导入 algolia 搜索
+              下載搜索索引文件以便導入 algolia 搜索
             </FloatPopover>
           </MotionButtonBase>
         ) : (

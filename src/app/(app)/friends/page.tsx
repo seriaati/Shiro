@@ -78,8 +78,8 @@ export default function Page() {
   return (
     <div>
       <header className="prose prose-p:my-2">
-        <h1>朋友们</h1>
-        <h3>海内存知己，天涯若比邻</h3>
+        <h1>朋友們</h1>
+        <h3>海內存知己，天涯若比鄰</h3>
       </header>
 
       <main className="mt-10 flex w-full flex-col">
@@ -100,7 +100,7 @@ export default function Page() {
           <>
             <Collapse
               title={
-                <div className="mt-8 font-bold">以下站点无法访问，已失联</div>
+                <div className="mt-8 font-bold">以下站點無法訪問，已失聯</div>
               }
             >
               <OutdateSection data={outdated} />
@@ -111,7 +111,7 @@ export default function Page() {
           <>
             <Collapse
               title={
-                <div className="mt-8 font-bold">以下站点不合规，已被禁止</div>
+                <div className="mt-8 font-bold">以下站點不合規，已被禁止</div>
               }
             >
               <BannedSection data={banned} />
@@ -273,16 +273,16 @@ const ApplyLinkInfo: FC = () => {
           {[
             `- 申请友链前请**务必确保**贵站有我站的友链，若审批通过后移除本站链接，本站也将移除友链，并加入黑名单。`,
             `- 若站点长时间无法访问，我会删除您的友链，恢复后可再次申请。`,
-            `- 确保您的网站不存在政治敏感问题及违法内容。没有过多的广告、无恶意软件、脚本。且转载文章须注明出处。`,
+            `- 确保您的網站不存在政治敏感问题及违法内容。没有过多的广告、无恶意软件、脚本。且转载文章须注明出处。`,
             `- 确保站点全局启用 HTTPS`,
             `- 您需要有自己的独立域名，暂且不同意公有子域名或免费域名的友链申请 (如 github.io, vercel.app, eu.org, js.cool, .tk, .ml, .cf 等)`,
-            `- 暂时不同意商业及非个人的网站的友链申请`,
+            `- 暂时不同意商业及非个人的網站的友链申请`,
           ].join('\n\n')}
         </Markdown>
         <Markdown className="[&_p]:!my-1">
           {[
             '',
-            `**站点标题**: [${
+            `**站點標題**: [${
               seo.title
             }](${`${location.protocol}//${location.host}`})`,
             `**站点描述**: ${seo.description}`,
@@ -314,71 +314,71 @@ const FormModal = () => {
   const [inputs] = useState(() => [
     {
       name: 'author',
-      placeholder: '昵称 *',
+      placeholder: '暱稱 *',
       rules: [
         {
           validator: (value: string) => !!value,
-          message: '昵称不能为空',
+          message: '暱稱不能为空',
         },
         {
           validator: (value: string) => value.length <= 20,
-          message: '昵称不能超过20个字符',
+          message: '暱稱不能超过20個字符',
         },
       ],
     },
     {
       name: 'name',
-      placeholder: '站点标题 *',
+      placeholder: '站點標題 *',
       rules: [
         {
           validator: (value: string) => !!value,
-          message: '站点标题不能为空',
+          message: '站點標題不能为空',
         },
         {
           validator: (value: string) => value.length <= 20,
-          message: '站点标题不能超过20个字符',
+          message: '站點標題不能超过20個字符',
         },
       ],
     },
     {
       name: 'url',
-      placeholder: '网站 * https://',
+      placeholder: '網站 * https://',
       rules: [
         {
           validator: isHttpsUrl,
-          message: '请输入正确的网站链接 https://',
+          message: '请输入正确的網站链接 https://',
         },
       ],
     },
     {
       name: 'avatar',
-      placeholder: '头像链接 * https://',
+      placeholder: '頭像鏈接 * https://',
       rules: [
         {
           validator: isHttpsUrl,
-          message: '请输入正确的头像链接 https://',
+          message: '请输入正确的頭像鏈接 https://',
         },
       ],
     },
     {
       name: 'email',
-      placeholder: '留下你的邮箱哦 *',
+      placeholder: '留下你的郵箱哦 *',
 
       rules: [
         {
           validator: isEmail,
-          message: '请输入正确的邮箱',
+          message: '請輸入正確的郵箱',
         },
       ],
     },
     {
       name: 'description',
-      placeholder: '一句话描述一下自己吧 *',
+      placeholder: '一句話描述一下自己吧 *',
 
       rules: [
         {
           validator: (value: string) => !!value,
-          message: '一句话描述一下自己吧',
+          message: '一句話描述一下自己吧',
         },
         {
           validator: (value: string) => value.length <= 50,

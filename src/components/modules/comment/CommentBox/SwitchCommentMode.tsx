@@ -20,7 +20,7 @@ const copyMap = {
 }
 const SwitchCommentModeButton = () => {
   const mode = useCommentMode()
-  const copy = `转换到${copyMap[mode]}`
+  const copy = `轉換到${copyMap[mode]}`
   return (
     <>
       <i
@@ -36,7 +36,7 @@ const SwitchCommentModeButton = () => {
 }
 export const SwitchCommentMode = () => {
   const mode = useCommentMode()
-  const copy = `转换到${copyMap[mode]}`
+  const copy = `轉換到${copyMap[mode]}`
 
   const hasText = useCommentBoxHasText()
 

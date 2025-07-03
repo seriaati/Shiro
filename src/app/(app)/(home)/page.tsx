@@ -187,7 +187,7 @@ const Hero = () => {
           )}
         >
           <small className="text-center">
-            当第一颗卫星飞向大气层外，我们便以为自己终有一日会征服宇宙。
+            當第一顆衛星飛向大氣層外，我們便以為自己終有一日會征服宇宙。
           </small>
           <span className="mt-8 animate-bounce">
             <i className="i-mingcute-right-line rotate-90 text-2xl" />
@@ -336,7 +336,7 @@ const Windsock = () => {
                 })
               })
 
-            toast.success('谢谢你！', {
+            toast.success('謝謝你！', {
               iconElement: (
                 <m.i
                   className="i-mingcute-heart-fill text-uk-red-light"
@@ -369,7 +369,7 @@ const Windsock = () => {
             presentSubscribe()
           }}
         >
-          订阅
+          訂閱
           <i className="i-material-symbols-notifications-active" />
         </StyledButton>
       </div>
