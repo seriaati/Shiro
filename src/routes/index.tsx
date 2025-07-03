@@ -59,7 +59,7 @@ const UserLoginStat = () => {
         </span>
         <div className="pt-[.5rem]" />
         <span>
-          上次登錄时间:{' '}
+          上次登錄時間:{' '}
           {user.lastLoginTime ? (
             <time>
               {parseDate(user.lastLoginTime, 'YYYY 年 M 月 D 日 dddd')}

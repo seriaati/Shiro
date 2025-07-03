@@ -187,7 +187,7 @@ const Hero = () => {
           )}
         >
           <small className="text-center">
-            當第一顆衛星飛向大氣層外，我們便以為自己終有一日會征服宇宙。
+            休息是為了走更長遠的路，懶惰是為了找出更有效率的最佳解。
           </small>
           <span className="mt-8 animate-bounce">
             <i className="i-mingcute-right-line rotate-90 text-2xl" />
@@ -229,17 +229,12 @@ const windsock = [
     icon: FaSolidFeatherAlt,
   },
   {
-    title: '度过的时光呀',
+    title: '度過的時光',
     icon: FaSolidHistory,
     path: '/timeline',
   },
   {
-    title: '朋友们',
-    icon: FaSolidUserFriends,
-    path: '/friends',
-  },
-  {
-    title: '写下一点思考',
+    title: '臨時想到的東西',
     icon: MdiLightbulbOn20,
     path: '/thinking',
   },
@@ -247,16 +242,6 @@ const windsock = [
     title: '看看我做些啥',
     icon: MdiFlask,
     path: '/projects',
-  },
-  {
-    title: '记录下一言',
-    path: '/says',
-    icon: FaSolidComments,
-  },
-  {
-    title: '跃迁',
-    icon: RMixPlanet,
-    path: 'https://travel.moe/go.html',
   },
 ]
 
@@ -274,8 +259,8 @@ const Windsock = () => {
   return (
     <>
       <div className="center mt-28 flex flex-col">
-        <div className="my-5 text-2xl font-medium">风向标</div>
-        <div className="mb-24 opacity-90">去到别去看看？</div>
+        <div className="my-5 text-2xl font-medium">風向標</div>
+        <div className="mb-24 opacity-90">去到別去看看？</div>
         <ul className="flex flex-col flex-wrap gap-2 gap-y-8 opacity-80 lg:flex-row">
           {windsock.map((item, index) => {
             return (
@@ -357,7 +342,7 @@ const Windsock = () => {
             })
           }}
         >
-          喜欢本站 <i className="i-mingcute-heart-fill" />{' '}
+          喜歡本站 <i className="i-mingcute-heart-fill" />{' '}
           <NumberSmoothTransition>
             {count as any as string}
           </NumberSmoothTransition>

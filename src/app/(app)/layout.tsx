@@ -221,7 +221,7 @@ const SayHi = () => {
 This Personal Space Powered By Mix Space.
 Written by TypeScript, Coding with Love.
 --------
-Stay hungry. Stay foolish. --Steve Jobs
+Stay humble. Learn more. --Steve Jobs
 `
 
       if (document.firstChild?.nodeType !== Node.COMMENT_NODE) {

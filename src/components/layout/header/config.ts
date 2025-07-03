@@ -97,16 +97,6 @@ export const headerMenuConfig: IHeaderMenu[] = [
         icon: h(MdiFlask),
         path: '/projects',
       },
-      {
-        title: '一言',
-        path: '/says',
-        icon: h(FaSolidComments),
-      },
-      {
-        title: '躍遷',
-        icon: h(RMixPlanet),
-        path: 'https://travel.moe/go.html',
-      },
     ],
   },
 ]
