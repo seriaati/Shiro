@@ -123,7 +123,7 @@ const Item = memo<{
               {hasSource && `出自“${say.source}”`}
               {hasSource && hasAuthor && ', '}
               {hasAuthor && `作者：${say.author}`}
-              {!hasAuthor && !hasSource && '站长说'}
+              {!hasAuthor && !hasSource && '站長說'}
             </div>
           </div>
         </div>

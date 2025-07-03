@@ -28,7 +28,7 @@ export const ReplyModal = (props: { comment: CommentModel }) => {
   const handleReply = useEventCallback(async () => {
     const text = getValue()
     if (!text) {
-      toast.error('回復內容不能为空')
+      toast.error('回復內容不能為空')
       return
     }
 

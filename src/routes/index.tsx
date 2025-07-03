@@ -10,7 +10,7 @@ import { parseDate } from '~/lib/datetime'
 import { apiClient } from '~/lib/request'
 
 export const config = defineRouteConfig({
-  title: '首页',
+  title: '首頁',
   icon: <i className="i-mingcute-dashboard-line" />,
   priority: 1,
 })

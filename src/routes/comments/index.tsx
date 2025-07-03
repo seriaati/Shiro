@@ -22,7 +22,7 @@ import { Tabs } from '~/components/ui/tabs'
 import { adminQueries } from '~/queries/definition'
 
 export const config = {
-  title: '评论',
+  title: '評論',
   icon: <i className="i-mingcute-comment-line" />,
   priority: 3,
 }
@@ -39,7 +39,7 @@ export function Component() {
 
       {
         key: CommentState.Read,
-        title: '已读',
+        title: '已讀',
         component: CommentTable,
       },
 

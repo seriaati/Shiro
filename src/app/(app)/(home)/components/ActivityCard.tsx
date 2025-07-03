@@ -68,7 +68,7 @@ export const ActivityCard = ({ activity }: { activity: ReactActivityType }) => {
                   <b>
                     {activity.title ||
                       (activity.type === CollectionRefTypes.Recently
-                        ? '一条想法中'
+                        ? '一條想法中'
                         : null)}
                   </b>
                 </Link>{' '}

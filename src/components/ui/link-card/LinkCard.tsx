@@ -552,10 +552,10 @@ const fetchBangumiData: FetchObject = {
       const { infobox } = json
       infobox.forEach(
         (item: { key: string; value: string | { v: string }[] }) => {
-          if (item.key === '简体中文名') {
+          if (item.key === '簡體中文名') {
             title =
               typeof item.value === 'string' ? item.value : item.value[0].v
-          } else if (item.key === '别名') {
+          } else if (item.key === '別名') {
             const aliases: { v: string }[] = item.value as { v: string }[]
             aliases.forEach((alias: { v: string }) => {
               originalTitle += `${alias.v} / `

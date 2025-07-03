@@ -58,7 +58,7 @@ const iconSet: Record<
     (id) => `https://space.bilibili.com/${id}`,
   ],
   netease: [
-    '网易云音乐',
+    '網易雲音樂',
     <NeteaseCloudMusicIcon />,
     '#C20C0C',
     (id) => `https://music.163.com/#/user/home?id=${id}`,

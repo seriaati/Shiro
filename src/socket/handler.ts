@@ -102,7 +102,7 @@ export const eventHandler = (
         getGlobalCurrentPostData()?.id === post.id
       ) {
         router.replace(routeBuilder(Routes.PageDeletd, {}))
-        toast.error('文章已删除')
+        toast.error('文章已刪除')
         trackerRealtimeEvent()
       }
 
@@ -121,7 +121,7 @@ export const eventHandler = (
       setCurrentNoteData((draft) => {
         Object.assign(draft.data, note)
       })
-      toast.info('手记已更新')
+      toast.info('手記已更新')
       trackerRealtimeEvent()
 
       if (currentData.text !== note.text) {
@@ -141,7 +141,7 @@ export const eventHandler = (
         getCurrentNoteData()?.data.id === note.id
       ) {
         router.replace(routeBuilder(Routes.PageDeletd, {}))
-        toast.error('手记已删除')
+        toast.error('手記已刪除')
         trackerRealtimeEvent()
       }
 
@@ -155,7 +155,7 @@ export const eventHandler = (
         setCurrentPageData((draft) => {
           Object.assign(draft, data)
         })
-        toast.info('页面已更新')
+        toast.info('頁面已更新')
         trackerRealtimeEvent()
       }
       break

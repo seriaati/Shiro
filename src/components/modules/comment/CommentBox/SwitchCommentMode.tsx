@@ -15,8 +15,8 @@ import {
 } from './hooks'
 
 const copyMap = {
-  [CommentBoxMode.legacy]: '新版评论',
-  [CommentBoxMode['with-auth']]: '旧版评论',
+  [CommentBoxMode.legacy]: '新版評論',
+  [CommentBoxMode['with-auth']]: '舊版評論',
 }
 const SwitchCommentModeButton = () => {
   const mode = useCommentMode()

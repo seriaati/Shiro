@@ -81,7 +81,7 @@ const EditorModal: FC<{
 
   const handleSave = () => {
     if (!isValidJSONString(currentEditValueRef.current)) {
-      toast.error('JSON 格式错误，请检查后再试')
+      toast.error('JSON 格式錯誤，請檢查後再試')
       return
     }
     onChange(JSON.parse(currentEditValueRef.current) as Record<string, unknown>)

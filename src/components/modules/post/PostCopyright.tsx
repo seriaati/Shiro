@@ -48,7 +48,7 @@ export const PostCopyright: FC = () => {
       </p>
       <p>
         最後修改時間:{' '}
-        {date ? dayjs(date).format('YYYY 年 MM 月 DD 日 H:mm') : '暂没有修改过'}
+        {date ? dayjs(date).format('YYYY 年 MM 月 DD 日 H:mm') : '暫沒有修改過'}
       </p>
       <Divider />
       <div>

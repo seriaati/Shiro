@@ -13,7 +13,7 @@ export const PostCombinedSwitch = () => {
     <>
       <LabelSwitch
         checked={copyright}
-        label="版权信息"
+        label="版權信息"
         onCheckedChange={setCopyright}
       />
 

@@ -264,19 +264,19 @@ const ApplyLinkInfo: FC = () => {
   })
   const { present } = useModalStack()
   if (!canApply) {
-    return <NotSupport className="mt-20" text="主人禁止了申请友链。" />
+    return <NotSupport className="mt-20" text="主人禁止了申請友鏈。" />
   }
   return (
     <>
       <div className="prose mt-20">
         <Markdown>
           {[
-            `- 申请友链前请**务必确保**贵站有我站的友链，若审批通过后移除本站链接，本站也将移除友链，并加入黑名单。`,
-            `- 若站点长时间无法访问，我会删除您的友链，恢复后可再次申请。`,
-            `- 确保您的網站不存在政治敏感问题及违法内容。没有过多的广告、无恶意软件、脚本。且转载文章须注明出处。`,
-            `- 确保站点全局启用 HTTPS`,
-            `- 您需要有自己的独立域名，暂且不同意公有子域名或免费域名的友链申请 (如 github.io, vercel.app, eu.org, js.cool, .tk, .ml, .cf 等)`,
-            `- 暂时不同意商业及非个人的網站的友链申请`,
+            `- 申請友鏈前請**務必確保**貴站有我站的友鏈，若審批通過後移除本站鏈接，本站也將移除友鏈，並加入黑名單。`,
+            `- 若站點長時間無法訪問，我會刪除您的友鏈，恢復後可再次申請。`,
+            `- 確保您的網站不存在政治敏感問題及違法內容。沒有過多的廣告、無惡意軟件、腳本。且轉載文章須註明出處。`,
+            `- 確保站點全局啟用 HTTPS`,
+            `- 您需要有自己的獨立域名，暫且不同意公有子域名或免費域名的友鏈申請 (如 github.io, vercel.app, eu.org, js.cool, .tk, .ml, .cf 等)`,
+            `- 暫時不同意商業及非個人的網站的友鏈申請`,
           ].join('\n\n')}
         </Markdown>
         <Markdown className="[&_p]:!my-1">
@@ -285,8 +285,8 @@ const ApplyLinkInfo: FC = () => {
             `**站點標題**: [${
               seo.title
             }](${`${location.protocol}//${location.host}`})`,
-            `**站点描述**: ${seo.description}`,
-            `**主人头像**: [点击下载](${avatar})`,
+            `**站點描述**: ${seo.description}`,
+            `**主人頭像**: [點擊下載](${avatar})`,
             `**主人名字**: ${name}`,
           ].join('\n\n')}
         </Markdown>
@@ -318,11 +318,11 @@ const FormModal = () => {
       rules: [
         {
           validator: (value: string) => !!value,
-          message: '暱稱不能为空',
+          message: '暱稱不能為空',
         },
         {
           validator: (value: string) => value.length <= 20,
-          message: '暱稱不能超过20個字符',
+          message: '暱稱不能超過20個字符',
         },
       ],
     },
@@ -332,11 +332,11 @@ const FormModal = () => {
       rules: [
         {
           validator: (value: string) => !!value,
-          message: '站點標題不能为空',
+          message: '站點標題不能為空',
         },
         {
           validator: (value: string) => value.length <= 20,
-          message: '站點標題不能超过20個字符',
+          message: '站點標題不能超過20個字符',
         },
       ],
     },
@@ -346,7 +346,7 @@ const FormModal = () => {
       rules: [
         {
           validator: isHttpsUrl,
-          message: '请输入正确的網站链接 https://',
+          message: '請輸入正確的網站鏈接 https://',
         },
       ],
     },
@@ -356,7 +356,7 @@ const FormModal = () => {
       rules: [
         {
           validator: isHttpsUrl,
-          message: '请输入正确的頭像鏈接 https://',
+          message: '請輸入正確的頭像鏈接 https://',
         },
       ],
     },
@@ -382,7 +382,7 @@ const FormModal = () => {
         },
         {
           validator: (value: string) => value.length <= 50,
-          message: '一句话描述不要超过50个字啦',
+          message: '一句話描述不要超過50個字啦',
         },
       ],
     },

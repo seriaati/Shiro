@@ -29,7 +29,7 @@ export const useSayModal = () => {
   return useCallback(
     (editingData?: SayModel) => {
       present({
-        title: editingData ? '编辑一言' : '发布一言',
+        title: editingData ? '編輯一言' : '發布一言',
         content: () => createElement(SayModalForm, { editingData }),
         modalClassName: 'w-[500px]',
       })

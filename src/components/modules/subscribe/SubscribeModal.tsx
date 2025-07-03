@@ -22,9 +22,9 @@ interface SubscribeModalProps {
 
 const subscribeTextMap: Record<string, string> = {
   post_c: '文章',
-  note_c: '手记',
-  say_c: '说说',
-  recently_c: '速记',
+  note_c: '手記',
+  say_c: '說說',
+  recently_c: '速記',
 }
 
 const initialState = {
@@ -92,7 +92,7 @@ export const SubscribeModal: FC<SubscribeModalProps> = ({
 
   const handleSubList: React.EventHandler<any> = async (e) => {
     if (!canSub) {
-      toast.error('訂閱功能暂时没有开启哦')
+      toast.error('訂閱功能暫時沒有開啟哦')
       return
     }
     preventDefault(e)
@@ -103,7 +103,7 @@ export const SubscribeModal: FC<SubscribeModalProps> = ({
       Object.keys(types).filter((name) => state.types[name]) as any[],
     )
 
-    toast.success('訂閱成功，谢谢你！')
+    toast.success('訂閱成功，謝謝你！')
     dispatch({ type: 'reset' })
     onConfirm()
   }
@@ -117,7 +117,7 @@ export const SubscribeModal: FC<SubscribeModalProps> = ({
       </p>
       <Input
         type="text"
-        placeholder="留下你的邮箱哦 *"
+        placeholder="留下你的郵箱哦 *"
         required
         value={state.email}
         onChange={(e) => {

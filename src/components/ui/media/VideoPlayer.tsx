@@ -217,7 +217,7 @@ const ControlBar = memo(() => {
       />
 
       <ActionIcon
-        label={isPaused ? '播放' : '暂停'}
+        label={isPaused ? '播放' : '暫停'}
         className="center relative flex"
         onClick={() => {
           if (isPaused) {
@@ -304,7 +304,7 @@ const DownloadVideo = () => {
   })
 
   return (
-    <ActionIcon label="下载" onClick={download}>
+    <ActionIcon label="下載" onClick={download}>
       {isDownloading ? (
         <i className="i-mingcute-loading-3-fill size-5 animate-spin" />
       ) : (
@@ -335,9 +335,9 @@ const VolumeControl = () => {
       }}
     >
       {muted ? (
-        <i className="i-mingcute-volume-mute-fill size-5" title="静音" />
+        <i className="i-mingcute-volume-mute-fill size-5" title="靜音" />
       ) : (
-        <i className="i-mingcute-volume-fill size-5" title="取消静音" />
+        <i className="i-mingcute-volume-fill size-5" title="取消靜音" />
       )}
     </ActionIcon>
   )

@@ -41,7 +41,7 @@ export const NoteCombinedSwitch = () => {
           color="primary"
           labelPlacement="left"
           labelClassName="text-xs"
-          label="密码"
+          label="密碼"
           type="password"
           inputClassName="text-base font-medium"
           value={password}

@@ -95,7 +95,7 @@ export const useCreateNote = () => {
       })
     },
     onSuccess: () => {
-      toast.success('创建成功')
+      toast.success('創建成功')
       resetAutoSaver('note')
     },
   })

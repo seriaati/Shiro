@@ -26,7 +26,7 @@ export const Hitokoto = () => {
         creator: data.creator,
       }).find(Boolean)
       if (!data.hitokoto) {
-        return '没有获取到句子信息'
+        return '沒有獲取到句子信息'
       } else {
         return data.hitokoto + (postfix ? ` —— ${postfix}` : '')
       }
@@ -46,7 +46,7 @@ export const Hitokoto = () => {
         <MotionButtonBase
           onClick={() => {
             navigator.clipboard.writeText(hitokoto)
-            toast.success('已复制')
+            toast.success('已複製')
             toast.info(hitokoto)
           }}
         >
@@ -59,17 +59,17 @@ export const Hitokoto = () => {
 
 export enum SentenceType {
   '動畫' = 'a',
-  '漫画' = 'b',
-  '游戏' = 'c',
+  '漫畫' = 'b',
+  '遊戲' = 'c',
   '文學' = 'd',
   '原創' = 'e',
-  '来自网络' = 'f',
+  '來自網絡' = 'f',
   '其他' = 'g',
-  '影视' = 'h',
-  '诗词' = 'i',
-  '网易云' = 'j',
+  '影視' = 'h',
+  '詩詞' = 'i',
+  '網易雲' = 'j',
   '哲學' = 'k',
-  '抖机灵' = 'l',
+  '抖機靈' = 'l',
 }
 export const fetchHitokoto = async (
   type: SentenceType[] | SentenceType = SentenceType.文學,

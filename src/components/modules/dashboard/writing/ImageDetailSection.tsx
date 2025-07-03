@@ -227,7 +227,7 @@ const Item: FC<
           }}
         />
         <AdvancedInput
-          label="宽度"
+          label="寬度"
           value={image.width?.toString() || ''}
           onChange={(e) => {
             const validValue = Number.parseInt(e.target.value)
@@ -236,7 +236,7 @@ const Item: FC<
           }}
         />
         <AdvancedInput
-          label="类型"
+          label="類型"
           value={image.type?.toString() || ''}
           onChange={(e) => {
             handleOnChange(image.src, 'type', e.target.value)

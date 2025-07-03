@@ -77,15 +77,15 @@ export class CrossBellConnector {
           .catch(() => '')
 
         if (!articleUrl) {
-          throw new Error('文章链接生成失败')
+          throw new Error('文章鏈接生成失敗')
         }
 
         const contentWithFooter = `${text}
 
 <span style="text-align: right;font-size: 0.8em; float: right">此文由 [Mix Space](https://github.com/mx-space) 同步更新至 xLog
-原始链接为 <${articleUrl}></span><br ><br >`
+原始鏈接為 <${articleUrl}></span><br ><br >`
 
-        toast.info('正在发布到 xLog...')
+        toast.info('正在發布到 xLog...')
 
         const input = {
           siteId: SITE_ID,
@@ -154,7 +154,7 @@ export class CrossBellConnector {
         throw err
       })
 
-      toast.success('xLog 发布成功')
+      toast.success('xLog 發布成功')
 
       let nextPageId = pageId
       if (!nextPageId) {

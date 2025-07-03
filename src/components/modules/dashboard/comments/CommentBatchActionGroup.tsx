@@ -30,7 +30,7 @@ export const CommentBatchActionGroup = () => {
       ids.map((id) => updateCommentState({ id, state: newState })),
     ).then(() => {
       setSelectionKeys(new Set())
-      toast.success('操作已经成功')
+      toast.success('操作已經成功')
     })
   }
   const batchDelete = async () => {
@@ -38,7 +38,7 @@ export const CommentBatchActionGroup = () => {
 
     Promise.all(ids.map((id) => deleteCommentState({ id }))).then(() => {
       setSelectionKeys(new Set())
-      toast.success('操作已经成功')
+      toast.success('操作已經成功')
     })
   }
   const search = useSearchParams()

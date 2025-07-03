@@ -38,15 +38,15 @@ export const PostsSortingFab = () => {
     () =>
       [
         {
-          label: '默认',
+          label: '默認',
           value: 'default',
         },
         {
-          label: '创建时间',
+          label: '創建時間',
           value: 'created',
         },
         {
-          label: '更新时间',
+          label: '更新時間',
           value: 'modified',
         },
       ] as SortByValues,

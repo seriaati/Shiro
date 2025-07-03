@@ -101,7 +101,7 @@ const cardSlot: CardProps<PostModel>['slots'] = {
             wrapperClassName="text-xs"
             as="span"
             type="tooltip"
-            triggerElement="(已编辑)"
+            triggerElement="(已編輯)"
           >
             編輯於 <RelativeTime date={data.modified} />
           </FloatPopover>

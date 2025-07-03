@@ -150,7 +150,7 @@ const SearchPanelImpl = () => {
             case 'note': {
               return {
                 title: item.title,
-                subtitle: '手记',
+                subtitle: '手記',
                 id: item.id,
                 url: `/notes/${item.nid}`,
               }
@@ -158,7 +158,7 @@ const SearchPanelImpl = () => {
             case 'page': {
               return {
                 title: item.title,
-                subtitle: '页面',
+                subtitle: '頁面',
                 id: item.id,
                 url: `/${item.slug}`,
               }
@@ -274,7 +274,7 @@ const SearchPanelImpl = () => {
                 {!data && isLoading && isFetching && (
                   <div className="loading-dots text-[30px]" />
                 )}
-                <span>{!!keyword && '无内容'}</span>
+                <span>{!!keyword && '無內容'}</span>
               </div>
             </div>
           ) : (

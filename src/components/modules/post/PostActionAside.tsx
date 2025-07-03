@@ -112,7 +112,7 @@ const LikeButton = () => {
       onClick={() => {
         handleLike()
         control.start('tap')
-        toast.success('捕捉一只大佬！', {
+        toast.success('捕捉一隻大佬！', {
           iconElement: (
             <m.i
               className="text-uk-orange-light"
@@ -174,7 +174,7 @@ const ShareButton = () => {
 
         const hasShare = 'share' in navigator
 
-        const title = '分享一片宝藏文章'
+        const title = '分享一片寶藏文章'
         const url = urlBuilder(
           routeBuilder(Routes.Post, {
             slug: post.slug,
@@ -192,7 +192,7 @@ const ShareButton = () => {
           })
         else {
           present({
-            title: '分享此内容',
+            title: '分享此內容',
             clickOutsideToDismiss: true,
             content: () => <ShareModal text={text} title={title} url={url} />,
           })

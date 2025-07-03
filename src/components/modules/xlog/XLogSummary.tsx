@@ -22,8 +22,8 @@ export const XLogSummary: FC<XLogSummaryProps> = (props) => {
           revalidate: 60 * 10,
         },
       }).then((res) => res.json())
-      if (!data) throw new Error('请求错误')
-      if (!data.summary) throw new Error('内容暂时无法获取')
+      if (!data) throw new Error('請求錯誤')
+      if (!data.summary) throw new Error('內容暫時無法獲取')
       return data
     },
     enabled: !!cid,
@@ -61,7 +61,7 @@ export const XLogSummary: FC<XLogSummaryProps> = (props) => {
             <a href="https://xlog.app" target="_blank" rel="noreferrer">
               xLog
             </a>{' '}
-            驱动)
+            驅動)
           </p>
         )}
       </AutoResizeHeight>

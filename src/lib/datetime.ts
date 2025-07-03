@@ -44,7 +44,7 @@ export const relativeTimeFromNow = (
 
   if (elapsed < msPerMinute) {
     const gap = Math.ceil(elapsed / 1000)
-    return gap <= 0 ? '刚刚' : `${gap} 秒前`
+    return gap <= 0 ? '剛剛' : `${gap} 秒前`
   } else if (elapsed < msPerHour) {
     return `${Math.round(elapsed / msPerMinute)} 分鐘前`
   } else if (elapsed < msPerDay) {

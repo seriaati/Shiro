@@ -223,7 +223,7 @@ const windsock = [
     icon: IcTwotoneSignpost,
   },
   {
-    title: '手记',
+    title: '手記',
     type: 'Note',
     path: '/notes',
     icon: FaSolidFeatherAlt,

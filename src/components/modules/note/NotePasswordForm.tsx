@@ -19,8 +19,8 @@ export const NotePasswordForm = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           type="password"
-          placeholder="输入密码以查看"
-          aria-label="输入密码以查看"
+          placeholder="輸入密碼以查看"
+          aria-label="輸入密碼以查看"
         />
         <StyledButton
           disabled={!password}

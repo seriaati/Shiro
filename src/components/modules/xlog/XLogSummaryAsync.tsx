@@ -61,7 +61,7 @@ export const XLogSummaryAsync = async (
         <a href="https://xlog.app" target="_blank" rel="noreferrer">
           xLog
         </a>{' '}
-        驱动)
+        驅動)
       </p>
     </div>
   )

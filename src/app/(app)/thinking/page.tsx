@@ -90,7 +90,7 @@ const PostBox = () => {
         bordered={false}
         wrapperClassName="h-[150px] bg-gray-200/50 dark:bg-zinc-800/50"
         value={value}
-        placeholder="此刻在想什么？"
+        placeholder="此刻在想什麼？"
         onChange={(e) => {
           setValue(e.target.value)
         }}
@@ -379,7 +379,7 @@ const CommentModal = (props: RecentlyModel) => {
 
   return (
     <div className="max-w-[95vw] overflow-y-auto overflow-x-hidden md:w-[500px] lg:w-[600px] xl:w-[700px]">
-      <span>{allowComment && '回复：'}</span>
+      <span>{allowComment && '回復：'}</span>
 
       <Markdown className="mt-4" allowsScript>
         {content}

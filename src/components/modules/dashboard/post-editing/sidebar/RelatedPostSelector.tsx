@@ -27,14 +27,14 @@ export const RelatedPostSelector = () => {
 
   return (
     <SidebarSection
-      label="关联阅读"
+      label="關聯閱讀"
       actions={
         <StyledButton
           variant="secondary"
           className="absolute right-0"
           onClick={() => {
             present({
-              title: '选择关联阅读',
+              title: '选择關聯閱讀',
               content: () => <RealtedPostList />,
               clickOutsideToDismiss: false,
             })

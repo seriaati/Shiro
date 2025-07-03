@@ -38,7 +38,7 @@ export const SayModalForm: FC<{
           ...values,
         },
       })
-      toast.success('发布成功')
+      toast.success('發布成功')
     }
 
     dismiss()
@@ -56,13 +56,13 @@ export const SayModalForm: FC<{
         }}
         className="max-h-[300px] min-h-[120px]"
         name="text"
-        placeholder={editingData?.text || '内容'}
+        placeholder={editingData?.text || '內容'}
         required
         defaultValue={editingData?.text}
       />
       <FormInput
         name="source"
-        placeholder={editingData?.source || '来源'}
+        placeholder={editingData?.source || '來源'}
         defaultValue={editingData?.source}
       />
       <FormInput
@@ -73,7 +73,7 @@ export const SayModalForm: FC<{
 
       <div className="flex justify-end">
         <StyledButton type="submit">
-          {editingData ? '更新' : '发布'}
+          {editingData ? '更新' : '發布'}
         </StyledButton>
       </div>
     </Form>
