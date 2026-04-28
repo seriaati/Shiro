@@ -174,7 +174,12 @@
       "object.hasown": "npm:@nolyfill/object.hasown@latest",
       "object.values": "npm:@nolyfill/object.values@latest",
       "string.prototype.matchall": "npm:@nolyfill/string.prototype.matchall@latest"
-    }
+    },
+    "onlyBuiltDependencies": [
+      "bufferutil",
+      "simple-git-hooks",
+      "unrs-resolver"
+    ]
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm exec lint-staged"
